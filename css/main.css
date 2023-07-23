@@ -1,0 +1,194 @@
+body { /*Body style*/
+    border: 2px solid black;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    Max-width: 100%;
+    font-family: Arial, sans-serif;
+}
+header { /*Header style*/
+    background-color: black;
+    color: white;
+    width: 100%; 
+    height: 5%; 
+    border-bottom: 1px solid red; 
+    padding-top: 0px; 
+    margin-top: 0px;  
+}
+h1 { 
+    margin: 0;
+    padding: 0;
+}
+.header-image { /*Text and logo alignment*/
+    display: flex;
+    align-items: center; 
+  }
+  
+  .header-image img { /*Space between the logo and text*/
+    margin-right: 10px; 
+  }
+
+  nav { /*navigation header style*/
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding: 10px ;
+    border-bottom: 1px solid red;
+    /* fixes the overlap between aside*/
+    overflow: auto;
+}
+
+/* navigation style button */
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin: 0 20px;
+    float: right;
+    text-decoration: none;
+    font-size: 18px;
+    /* margins, padding and border to appear as button */
+    margin: 5px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+nav a:hover { /*background color changes when hovering mouse cursor*/
+    color: yellow;
+}
+main { /*Main style*/
+  width: 65%;
+  padding: 30px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  margin: 5px;
+
+}
+aside { /*Aside style*/
+    text-align: center;
+    width: 30%;
+    background-color: gainsboro;
+    padding: 30px;
+    float: right;
+    border: 2px solid black;
+    border-top: 2px solid black;
+
+    margin: 5px;
+    
+}
+aside ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+
+
+footer { /*Footer style*/
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: x-small;
+
+
+}
+figure { /*Figures styles*/
+  text-align: center;
+  padding: 10px;
+  background-color: crimson;
+  margin: 0 auto; 
+  max-width: 70%; /*Max width indicates the image size*/
+  border: 5px solid white; 
+}
+
+/* Separate padding for images */
+figure img {
+  padding: 10px 0;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Separate padding for videos */
+figure iframe {
+  padding: 20px 0;
+  max-width: 100%;
+}
+  
+  figcaption { /*Caption styles for figures*/
+    font-size: 14px bold verdana;
+    color: black;
+    margin-top: 10px;
+  }
+
+  /* border and padding to create a separation between fieldsets */
+  fieldset {
+    border: 1px solid grey;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+
+  }
+  
+  /* Align legend to center */
+  legend {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Style for Submit and Reset buttons */
+  input[type="submit"],
+  input[type="reset"] {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: cornflowerblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input, select, textarea /*Creates spacing blocking between the label, select and text area*/
+  {
+    display: block;
+  }
+  input[type='radio'], input[type='checkbox'] /*Makes the radio button inline with labels*/
+  {
+    display:inline;
+  }
+  /* Submit button color changes when hovering cursor */
+  input[type="submit"]:hover 
+  {
+    background-color: #45a049;
+  }
+  /* Reset button color changes when hovering cursor */
+  input[type="reset"]:hover {
+    background-color: #f44336;
+  }
+  
+  label[for="not-robot"] {
+    font-family: Arial, sans-serif;
+  }
+  /*Media queries*/
+  @media (max-width: 600px){
+    body{
+        max-width: 600px;     
+    }
+    main{
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+    aside{
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+
+}
